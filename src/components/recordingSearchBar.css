@@ -1,0 +1,62 @@
+.recordings__searchBar__container input{
+    border: none;
+    padding-left: 0.5rem;
+    margin: 0;
+    outline: none;
+    background-color: #F2F4F8; 
+    font-size: 20px;
+    font-family: var(--primary-font); 
+    width: 80%;
+    height: 55px;
+    border-radius: 12px;
+    color: #2C2C2E;
+}
+
+.recordings__searchBar__container input::placeholder{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.recordings__searchBar__container button{
+    width: 120px;
+    height: 55px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: 1px solid #3040E5;
+    background: #3040E5;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+@media(max-width:1024px){
+    .recordings__searchBar__container input{
+        width: 70%;
+        height: 7vh;
+    }
+
+    .recordings__searchBar__container button{
+        width: 20%;
+        height: 7vh;
+        font-size: 23px;
+    }
+
+    .recordings__searchBar__container{
+        margin-top: 1rem;
+    }
+}
+
+
+@media(max-width:768px){
+
+    .recordings__searchBar__container{
+        margin-top: 2rem;
+    }
+
+    .recordings__searchBar__container button{
+        font-size: 14px;
+    }
+}

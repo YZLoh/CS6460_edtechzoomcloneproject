@@ -1,0 +1,38 @@
+.recordings__container{
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.recordings__header{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
+    color: #3040E5;
+}
+
+
+.recordings__item__container{
+    margin-top: 0.5rem;
+}
+
+
+.recordings__pagination__container{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+
+@media(max-width: 1024px){
+    .recordings__item__container{
+        width: 100%;
+    }
+
+    .recordings__pagination__container{
+        text-align: center;
+        margin: 0;
+    }
+}

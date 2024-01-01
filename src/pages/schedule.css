@@ -1,0 +1,251 @@
+
+
+.schedule__container{
+    width: 80%;
+    padding-bottom: 1.5rem;
+    margin: 1rem auto 0;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.schedule__header{
+    margin-left: 3rem;
+    padding-top: 2rem;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
+    color: #3040E5;
+}
+
+.schedule__content__container{
+    display: flex;
+}
+
+.grey__line{
+    width: 80%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.658);
+    border-radius: 2px;
+    margin-left: 3rem;
+}
+
+.schedule__container__left{
+    width: 50%;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.calendar__container{
+    width: 100%;
+    padding: 4rem;
+}
+
+
+.calendar{
+    padding: 1rem;
+}
+
+
+.schedule__container__right{
+    width: 50%;
+}
+
+.schedule__container__right__header{
+    margin-top: 2rem;
+}
+
+
+.right__header{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 700;
+    color: #3040E5;
+}
+
+.event{
+    display: flex;
+    width: 62%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+
+
+.event__title{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    color: #3040E5;
+}
+
+.event__description,.event__students,.event__timeslot,.event__date{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.join-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  
+    /* Optional: Add box shadow for a raised effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    /* Optional: Center the text vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Change the button color on hover */
+  .join-button:hover {
+    background-color: #0056b3; /* New background color on hover */
+  }
+
+
+  .event__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule__pagination__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+    
+  }
+
+  .schedule__pagination__container ul{
+    display: flex;
+    list-style: none;
+    margin-right: 5rem;
+  }
+
+  .schedule__pagination__container ul a{
+    color: #0056b3;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    margin-left: 10px;
+  }
+
+  .active-page{
+    font-weight: bold;
+  }
+
+
+  /* Custom pagination styles */
+.pagination__button,
+.pagination__next,
+.pagination__prev {
+  height: 32px;
+  width: 32px;
+  border-radius: 10px;
+  border: 3px solid #F1F1F1;
+  background: #FFF;
+  margin: 2px;
+}
+
+.pagination__button.active {
+  background: #2F80ED;
+  color: #fff;
+}
+
+.pagination__prev {
+  width: 80px;
+}
+
+.pagination__next,
+.pagination__prev {
+  width: 40px;
+}
+
+
+@media (max-width : 1024px){
+
+}
+
+@media(max-width : 768px){
+  .schedule__container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedule__header__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .schedule__header{
+    margin: 0;
+    padding: 1rem;
+    
+  }
+
+  .schedule__header__container .grey__line{
+    margin: 0;
+  }
+
+  .schedule__content__container{
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .schedule__container__left{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendar__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 0;  
+  }
+
+  .schedule__container__right{
+
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .right__header{
+    margin-bottom: 2rem;
+  }
+
+  .schedule__classes__container{
+    width: 100%;
+
+  }
+
+  .event{
+    width: 100%;
+  }
+
+  .schedule__pagination__container{
+    display: flex;
+    justify-content: center;
+  }
+
+}

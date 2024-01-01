@@ -1,0 +1,75 @@
+.microphone-test-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .microphone-test-container.active {
+    background-color: #3040E5; /* Green background when microphone is on */
+  }
+
+  
+  .audio-level-bar {
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .audio-level {
+    height: 100%;
+    background-color: #3040E5; /* Green color for audio level */
+    transition: width 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .microphone-test-container {
+    /* Existing styles for the container */
+  
+    /* Center the button horizontally and add some spacing */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+
+  .microphone-button {
+    position: absolute;
+    top: -90px;
+    left: 260px;
+    width: 50px; /* Adjust the button width */
+    height: 50px; /* Adjust the button height */
+    border: none;
+    border-radius: 50%;
+    background-color: #535353; /* Change the button background color */
+    color: white; /* Change the text color */
+    font-size: 1.5rem; /* Adjust the font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth background color transition */
+  }
+  
+  .microphone-button:hover {
+    background-color: #3040E5; /* Change the button background color on hover */
+  }
+  
+  .microphone-button.active{
+    background-color: #3040E5; /* Change the button background color for active state */
+  }
+  
+@media(max-width:1024px){
+  .microphone-button{
+    position: absolute;
+    width: 50px; /* Adjust the button width */
+    height: 50px;
+    left: 140px;
+    top: -90px;
+  }
+}
+
+
+  

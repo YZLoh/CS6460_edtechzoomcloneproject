@@ -1,0 +1,132 @@
+.recording__item-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.recording__item-card{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    width: 25%;
+    height: 10%;
+    background-color: transparent;
+    padding: 0.5rem;
+  /* Create the gradient using linear-gradient */
+    border: 3px solid #1D9BF0;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+
+
+.recording__view__button{
+    border: none;
+    width: 75px;
+    height: 30px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: 1px solid #3040E5;
+    background: #3040E5;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.recording__download__button{
+    border: none;
+    width: 75px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 5px;
+    color: #FFFFFF;
+    border: 1px solid #939395;
+    background: #939395;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.recording__delete__button{
+    border: none;
+    width: 75px;
+    height: 30px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: 1px solid #e33737;
+    background: #e33737;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.no__content__found{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.recording__video__preview{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.recording__video__preview video{
+    width: 100%;
+}
+
+
+.preview__description{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.preview__header{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    margin-block: 10px;
+}
+
+.recording__delete__button{
+    margin-top: 0.5rem;
+}
+
+
+
+@media(max-width:1024px){
+   .recording__item-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-block: 3rem;
+   }
+
+   .recording__item-card{
+        width: 80%;
+        margin-block: 1;
+   }
+}
+
+
+@media(max-width:768px){
+
+    .recording__delete__button{
+        margin-top: 0.5rem;
+    }
+    
+}

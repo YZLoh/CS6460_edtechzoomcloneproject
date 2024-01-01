@@ -1,0 +1,85 @@
+.login__centered__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+}
+
+.login__container {
+  padding: 5rem;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.welcome__message {
+  color: #000000;
+  font-family: var(--primary-font);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+.welcome__text {
+  font-family: var(--primary-font);
+  color: #2c2c2e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.login__input__container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 1.8rem;
+}
+
+.input__text {
+  border: 1px solid #181818;
+  padding-left: 0.5rem;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--primary-font);
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  color: #2c2c2e;
+}
+
+.input__text::placeholder {
+  font-family: var(--primary-font);
+  font-size: 14px;
+}
+
+.input__password {
+  border: 1px solid #181818;
+  padding-left: 0.5rem;
+  margin-block: 1rem;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--primary-font);
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  color: #2c2c2e;
+}
+
+.input__password::placeholder {
+  font-family: var(--primary-font);
+  font-size: 14px;
+}
+
+.login__button {
+  width: 120px;
+  height: 40px;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  color: #ffffff;
+  border: 1px solid #3040e5;
+  background: #3040e5;
+  cursor: pointer;
+}

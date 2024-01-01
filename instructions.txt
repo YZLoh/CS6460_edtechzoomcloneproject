@@ -1,0 +1,2 @@
+run package.json
+npm run build

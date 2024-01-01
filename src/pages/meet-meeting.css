@@ -1,0 +1,156 @@
+.meeting {
+  height: 100%;
+  width: 100%;
+  background-color: #8c55a3;
+  overflow: auto;
+}
+.meeting__header {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meeting__header__left {
+  display: flex;
+  align-items: center;
+}
+.meeting__header__left__logo {
+  width: 60px;
+  height: 60px;
+  color: white;
+}
+.meeting__header__left__text {
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: "Quicksand-Bold";
+  color: white;
+}
+.meeting__header__left__text:hover {
+  color: white;
+}
+.meeting__header__right {
+  cursor: pointer;
+  display: flex;
+  color: white;
+  font-family: "Quicksand-Bold";
+}
+.meeting__header__right a {
+  color: white;
+}
+.meeting__header__right__margin {
+  margin-right: 7px;
+}
+.meeting__body {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meeting__body__users {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.meeting__body__users-row {
+  flex-direction: row;
+}
+.meeting__body__users-column {
+  flex-direction: column;
+}
+.meeting__body__users__remote-video {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 40vw;
+}
+.meeting__body__users__remote-video-split {
+  width: 35vw;
+  justify-content: center;
+}
+.meeting__body__info {
+  margin-top: 10%;
+  color: white;
+  font-family: "Quicksand-Bold";
+  text-align: center;
+}
+.meeting__body__spinner {
+  margin-top: 10%;
+}
+.meeting__body__bar {
+  position: absolute;
+  bottom: 20px;
+  width: 60vw;
+  height: 45px;
+  background-color: #ed7655;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meeting__body__bar__video-container {
+  position: absolute;
+  right: -2vw;
+  top: -11vw;
+  transition: transform 1s ease-in-out;
+}
+.meeting__body__bar__video-container__local-video {
+  border-radius: 5px;
+  height: 10vw;
+  width: 20vw;
+  transition: transform 1s ease-in-out;
+}
+.meeting__body__bar__video-container__local-video:hover {
+  transform: scale(2);
+}
+.meeting__body__bar__video-container:hover {
+  transform: translateY(-5vw);
+}
+.meeting__body__bar__left-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.meeting__body__bar__left-bar__status {
+  width: 8vw;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2vw;
+  font-family: "Quicksand-Bold";
+  cursor: pointer;
+  user-select: none;
+}
+.meeting__body__bar__left-bar__status-inactive {
+  background-color: #ce0b29;
+}
+.meeting__body__bar__left-bar__status-active {
+  background-color: #299b43;
+}
+.meeting__body__bar__left-bar__title {
+  font-size: 1.2vw;
+  color: white;
+  margin-left: 10px;
+  text-align: center;
+  font-family: "Quicksand-Bold";
+}
+.meeting__body__bar__right-bar {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.meeting__body__bar__right-bar__count {
+  font-size: 10px;
+  font-family: "Quicksand-Bold";
+  color: white;
+  margin-right: 10px;
+}
+.meeting__body__bar__right-bar__icon {
+  margin-right: 15px;
+  width: 2vw;
+  height: 2vw;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.classes__container{
+
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.classes__header{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
+    color: #3040E5;
+}
+
+
+.classes__item__container{
+    margin-top: 2rem;
+}
+
+.classes__pagination__container{
+    text-align: right;
+}
+
+
+@media(max-width:1024px){
+    
+}
+
+
+@media(max-width:768px){
+
+}
+
+

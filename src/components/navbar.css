@@ -1,0 +1,219 @@
+.navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+
+.navbar__left__container{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar__icon__container{
+    width: 30%;
+}
+
+
+.navbar__icon__container a{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link__container{
+
+    display: flex;
+}
+
+.navbar__link__container ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar__link__container ul a,.navbar__right__container ul a,.navbar__icon__container a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__link__container ul a.active,
+.navbar__right__container ul a.active,
+.navbar__icon__container a.active {
+  color: #007bff; /* Set the color for active links */
+  font-weight: bold; /* Example: Make active links bold */
+}
+
+.navbar__link__container ul a.active:hover{
+    color: #007bff;
+}
+
+.navbar__link__container ul a{
+    font-family: 'Montserrat';
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar__link__container ul a:hover{
+    color: #3040E5;
+}
+
+.navbar__right__container ul a{
+    font-family: 'Montserrat';
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+
+.navbar__right__container ul a:hover{
+    color: #3040E5;
+}
+
+.navbar__right__container{
+    width: 16%;
+}
+
+.navbar__right__container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar__logo{
+    width: 15%;
+}
+
+.navbar__logo__text{
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+
+.navabr__logout__button{
+    color: #007bff;
+}
+
+.navbar__link__container li:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.navbar__link__container li:nth-child(2) a{
+    margin-left: 2rem;
+}
+
+.navbar__link__container li:nth-child(1) a{
+    margin-left: 0;
+}
+
+
+.navbar__mobile__menu__icon{
+    display: none;
+}
+
+.notification-icon{
+    margin-left: 5px;
+}
+
+@media(max-width: 1024px){
+    .navbar__link__container,.navbar__right__container{
+        display: none;
+    }
+
+    .mobile__navbar__container{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 280px;
+        height: 100vh;
+        top: 0;
+        right: 0px;
+        background-color: white;
+        z-index: 10;
+        
+    }
+    .hamburger-icon{
+        display: block;
+        font-size: 28px;
+        color: rgb(148, 148, 148);
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    .close-icon{
+        
+        display: block;
+        text-align: right;
+        margin-top: 25px;
+        margin-right: 30px;
+        font-size: 25px;
+        color: rgb(148, 148, 148);
+        cursor: pointer;
+        font-size: 40px;
+    }
+
+
+
+    .mobile-nav-links ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60vh;
+        margin-right: 3rem;
+        margin-top: 2rem;
+
+    }
+
+    .mobile-nav-links ul a{
+        text-decoration: none;
+        color: inherit;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .mobile-nav-links ul a:hover{
+        color: #007bff;
+    }
+
+    .mobile-nav-links ul a.active{
+        color: #007bff; /* Set the color for active links */
+        font-weight: bold;
+    }
+
+    .navbar__right__container{
+        
+    }
+
+    
+
+    
+}
+
+
+@media(max-width: 768px){
+    .navbar__link__container,.navbar__right__container{
+        display: none;
+    }
+
+    .navbar__icon__container{
+        min-width: 200px;
+    }
+
+    .navbar__logo__text{
+        font-size: 1.5rem;
+    }
+
+    
+}

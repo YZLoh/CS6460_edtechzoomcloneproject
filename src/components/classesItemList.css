@@ -1,0 +1,76 @@
+.classes__item-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.classes__item-card{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    width: 18%;
+    height: 10%;
+    background-color: transparent;
+    padding: 1rem;
+  /* Create the gradient using linear-gradient */
+    border: 3px solid #1D9BF0;
+    border-radius: 8px;
+
+}
+
+
+
+.classes__item-card h3{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.classes__item-card p{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.classes__item-card button{
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: 1px solid #3040E5;
+    background: #3040E5;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.classes__item-list p{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media(max-width:1024px){
+    .classes__item-card{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:768px){
+    .classes__item-list{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classes__item-card{
+        width: 50%;
+    }
+}
+

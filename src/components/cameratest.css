@@ -1,0 +1,73 @@
+.camera-test-container{
+    position: relative;
+
+    width: 68%;
+    height: 40vh;
+    background-color: #313131;
+    border-radius: 25px;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.camera__button{
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+}
+
+.camera__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust the button width */
+    height: 50px; /* Adjust the button height */
+    border: none;
+    border-radius: 50%;
+    background-color: #535353; /* Change the button background color */
+    color: white; /* Change the text color */
+    font-size: 1.5rem; /* Adjust the font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth background color transition */
+  }
+  
+  .camera__button:hover {
+    background-color: #3040E5; /* Change the button background color on hover */
+  }
+  
+  .camera__button.active {
+    background-color: #3040E5; /* Change the button background color for active state */
+  }
+
+  .camera-test-container{
+    overflow: hidden;
+  }
+
+  .camera-test-container video{
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+
+  @media(max-width:1024px){
+
+    .camera-test-container{
+      overflow: hidden
+    }
+
+    .camera-test-container video{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @media(max-width:768px){
+    .camera-test-container{
+      height: 210px;
+      overflow: hidden
+    }
+
+    .camera-test-container video{
+      object-fit: cover;
+      width: 100%;
+    }
+  }

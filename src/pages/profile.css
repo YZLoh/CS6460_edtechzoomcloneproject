@@ -1,0 +1,240 @@
+.profile__container{
+    width: 80%;
+    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.profile__header__text{
+    margin-left: 3rem;
+    padding-top: 2rem;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    color: #3040E5;
+}
+
+.grey__line{
+    width: 80%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.658);
+    border-radius: 2px;
+    margin-left: 3rem;
+}
+
+.profile__details__container{
+    display: flex;
+}
+
+.profile__details__left__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5rem;
+    width: 50%;
+}
+
+.profile__details__right__container{
+    width: 50%;
+}
+
+.profile-pic-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-pic-container {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the container round */
+    overflow: hidden; /* Hides any content that overflows the container */
+    border: 2px solid #fff; /* Optional border styling */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+}
+
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.profile__username{
+    padding-top: 1rem;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.profile__details__right__container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.profile__form__username__container{
+    margin-top: 2rem;
+}
+
+.header{
+    margin-top: 1rem;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    color: #007bff
+}
+
+.update-element{
+    margin-block: 1rem;
+}
+
+.form-label{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.form-input{
+    border: none;
+    margin-left: 2rem;
+    background-color: #F2F4F8;
+    height: 30px;
+    border-radius: 10px; 
+    padding-left: 1rem;
+    outline: none;
+}
+
+
+.newusername,.newPassword{
+    margin-left: 3.5rem;
+}
+
+.confirmPassword{
+    margin-left: 1.9rem;
+}
+
+.profile__button__container{
+    text-align: center;
+}
+
+.update-button{
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 1px solid #3040E5;
+    background: #3040E5;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+.password__button.update-button[disabled] {
+    background-color: #3040E5; /* Background color for disabled state */
+    color: #FFFFFF;/* Text color for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}
+
+
+@media(max-width:1024px){
+    .profile__button__container{
+        text-align: end;
+        margin-right: 1rem;
+    }
+
+    .update-element{
+        display: flex;
+        flex-direction: column;
+        margin-block: 1;
+    }
+    
+    .update-element input{
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+}
+
+@media(max-width:768px){
+    .profile__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile__details__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile__details__right__container{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .profile__header__text{
+        margin: 0;
+        margin-block: 1rem;
+    }
+
+    .profile__header .grey__line{
+        margin: 0;
+    }
+
+    .profile__details__left__container{
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .profile__username{
+        margin: 0;
+    }
+
+    .profile__form__username__container,.profile__form__username__container form,
+    .profile__form__password__container,.profile__form__password__container form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .update-element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 1rem;
+        width: 70%;
+    }
+
+    .update-element label{
+        margin-bottom: 0.5rem;
+    }
+
+    .update-element input{
+        margin: 0;
+        width: 100%;
+        height: 6vh;
+    }
+
+    .profile__button__container{
+        margin: 0;
+        text-align: center;
+    }
+
+    .profile__form__password__container{
+        margin-block: 2rem;
+    }
+}
+
+

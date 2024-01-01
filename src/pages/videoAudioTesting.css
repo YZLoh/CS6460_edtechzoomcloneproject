@@ -1,0 +1,187 @@
+
+
+.testingvideo__container{
+    display: flex;
+    margin: 2rem auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+
+.testingvideo__left__container{
+    width: 50%;
+    text-align: left;
+}
+
+
+.testingvideo__title{
+    margin-left: 4rem;
+    padding-top: 2rem;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 700;
+    color: #3040E5;
+}
+
+
+.testingvideo__text{
+    margin-left: 4rem;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+}
+
+.testingvideo__title__container{
+    margin-top: 7rem;
+}
+
+.testing__video__right__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+}
+
+.testing__video__container{
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    width: 80%;
+    height: 310px;
+    background-color: #313131;
+    border-radius: 10px;
+}
+
+
+.testing__video__container video{
+    border-radius: 10px;
+}
+
+
+
+.icon__container {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 1rem; /* Adjust the spacing between buttons */
+
+  }
+  
+  .round-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust the button width */
+    height: 50px; /* Adjust the button height */
+    border: none;
+    border-radius: 50%;
+    background-color: #535353; /* Change the button background color */
+    color: white; /* Change the text color */
+    font-size: 1.5rem; /* Adjust the font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth background color transition */
+  }
+  
+  .round-button:hover {
+    background-color: #3040E5; /* Change the button background color on hover */
+  }
+  
+  .round-button.active {
+    background-color: #3040E5; /* Change the button background color for active state */
+  }
+
+
+  .testing__video__right__container a{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+  }
+
+  .testing__join__button {
+    width: 140px;
+    height: 40px;
+    padding: 6px 12px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'Montserrat';
+    background-color: #3040E5; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-decoration: none;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: 3rem;
+    margin-right: 3.8rem;
+  }
+
+  
+  
+  .testing__join__button:hover {
+    background-color: #020d87; /* Darker blue on hover */
+  }
+  
+  /* Optional: Add a subtle shadow for a more modern look */
+  .testing__join__button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  @media(max-width: 1024px){
+
+    .testingvideo__container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testingvideo__left__container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .testingvideo__title{
+      margin: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .testingvideo__text{
+      margin: 0;
+      margin-block: 2rem;
+      padding: 1rem;
+      text-align: center
+    }
+
+    .testing__video__container{
+      max-width: 400px;
+      max-height: 300px;
+      margin: 0;
+    }
+
+    .testing__video__right__container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .testing__join__button{
+      margin: 0;
+      margin-block: 1rem;
+      align-self: center;
+    }
+  }
+  
+  

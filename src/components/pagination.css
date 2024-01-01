@@ -1,0 +1,29 @@
+
+
+.pagination__button,.pagination__next,.pagination__prev{
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+    border: 3px solid #F1F1F1;
+    background: #FFF;
+    margin: 2px;
+}
+
+
+
+
+.pagination__button.active {
+    background: #2F80ED; 
+    color: #fff; 
+}
+
+.pagination__prev{
+    width: 80px;
+}
+
+.pagination__next,.pagination__prev{
+    width: 40px;
+}
+
+
+
